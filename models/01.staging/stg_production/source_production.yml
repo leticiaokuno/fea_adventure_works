@@ -1,0 +1,51 @@
+sources:
+  - name: source_production
+    description: Produtos da Adventure Works
+    schema: raw_adventure_works
+    database: fea24_11
+    tables:
+      - name: product
+        description: Tabela contendo informações sobre produtos vendidos e em produção, como nome, preços, categoria e datas de modificação.
+        columns:
+          - name: productid
+            description: Identificador único para cada produto. Chave primária.
+            tests:
+              - unique
+              - not_null
+          - name: productsubcategoryid
+            description: Identificador da subcategoria a qual o produto pertence.
+          - name: productname
+            description: Nome oficial do produto para identificação no catálogo.
+          - name: listprice
+            description: Preço de lista do produto, sugerido para venda ao cliente.
+          - name: modifieddate
+            description: Data da última modificação do registro do produto.                
+
+      - name: productcategory
+        description: Tabela que identifica as categorias principais dos produtos, usada para agrupar e organizar os produtos em uma hierarquia.
+        columns:
+          - name: productcategoryid
+            description: ID ou número da categoria de produto.
+            tests:
+              - unique
+              - not_null
+          - name: productcategoryname
+            description: Nome da categoria do produto.
+          - name: modifieddate
+            description: Data da última modificação na categoria do produto.
+
+
+      - name: productsubcategory
+        description: Subcategorias dos produtos.
+        columns:
+          - name: productsubcategoryid
+            description: Número de identificação da subcategoria do produto. Chave primária. ProductSubcategory.
+            tests:
+             - unique
+             - not_null
+          - name: productcategoryid
+            description: Número de identificação da categoria do produto. Chave estrangeira para ProductCategory.ProductCategoryID.
+          - name: product_subcategory
+            description: Descrição da subcategoria.
+          - name: modifieddate
+            description: Data da última atualização da subcategoria.
