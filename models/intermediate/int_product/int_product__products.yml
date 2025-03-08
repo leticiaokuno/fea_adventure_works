@@ -4,18 +4,24 @@ models:
     columns:
       - name: pk_id_product
         description: ID único para cada produto.
-        tests:
+        data_tests:
           - unique
           - not_null
+
       - name: fk_subcategoryid_product
         description: ID da subcategoria do produto.
+
       - name: pk_id_category
         description: Chave primária para registros ProductCategory.
+
       - name: name_product
         description: Nome do produto. 
+
       - name: name_subcategory
         description: Nome da subcategoria.
+
       - name: productname_category
         description: Tabela com informações sobre categorias de produtos.
+
       - name: listprice_product
         description: Preço de lista do produto.

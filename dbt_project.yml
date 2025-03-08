@@ -39,4 +39,12 @@ models:
   fea_adventure_works:
     
     staging:
+      +schema: stg
+      stg_product:
+    
+    intermediate:
+      +schema: int
+    
+    marts:
       +materialized: table
+      +schema: marts
