@@ -3,17 +3,17 @@ with
     /* Chamada dos modelos necessários */
     product_category as (
         select *
-        from {{ ref('stg_product__productcategory') }}
+        from {{ ref('stg_production__productcategory') }}
     )
 
     , product as (
         select *
-        from {{ ref('stg_product__product') }}
+        from {{ ref('stg_production__product') }}
     )
 
     , product_subcategory as (
         select *
-        from {{ ref('stg_product__productsubcategory') }}
+        from {{ ref('stg_production__productsubcategory') }}
     )
 
 

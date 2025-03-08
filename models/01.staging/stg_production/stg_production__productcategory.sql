@@ -4,7 +4,7 @@ with
             cast (productcategoryid as int) as pk_id_category
             , cast (name as string) as productname_category
             , cast (modifieddate as date) as modifieddate_category
-        from {{ source('stg_product','productcategory') }}
+        from {{ source('source_production','productcategory') }}
     )
 
 select *

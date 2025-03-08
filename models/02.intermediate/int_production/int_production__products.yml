@@ -1,5 +1,5 @@
 models:
-  - name: int_product_products
+  - name: int_production_products
     description: Tabela com informações do produto.
     columns:
       - name: pk_id_product

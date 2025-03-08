@@ -5,7 +5,7 @@ with
             , cast (productcategoryid as int) as fk_id_category
             , cast (name as string) as name_subcategory
             , cast (modifieddate as date) as modifieddate_subcategory
-        from {{ source('stg_product', 'productsubcategory') }}
+        from {{ source('source_production', 'productsubcategory') }}
     )
 
 select *

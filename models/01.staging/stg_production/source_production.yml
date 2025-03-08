@@ -1,5 +1,5 @@
 sources:
-  - name: stg_product
+  - name: source_production
     description: Produtos da Adventure Works
     schema: raw_adventure_works
     database: fea24_11
