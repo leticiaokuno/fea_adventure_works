@@ -1,0 +1,12 @@
+models:
+  - name: int_reason
+    description: Modelo que une informações sobre promoções.
+    columns:
+      - name: ORDERID_HEADERREASON
+        tests:
+          - unique
+          - not_null
+
+      - name: PROMOTION_NAMES_AGG
+
+      - name: PROMOTION_TYPES_AGG

@@ -1,0 +1,24 @@
+models:
+  - name: int_customer
+    description: Modelo que une informações sobre clientes.
+    columns:
+      - name: ID_CUSTOMER
+        tests:
+          - unique
+          - not_null
+
+      - name: ID_PERSON
+        tests: 
+          - unique
+
+      - name: STOREID_CUSTOMER
+
+      - name: TYPE_PERSON
+
+      - name: FIRSTNAME_PERSON
+
+      - name: MIDDLENAME_PERSON
+
+      - name: LASTNAME_PERSON
+
+      - name: FULLNAME_PERSON
