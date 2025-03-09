@@ -1,0 +1,28 @@
+models:
+  - name: fct_salesorder
+    description: Tabela fato para produtos individuais associados a um pedido de venda específico."
+    columns:
+    - name: SALESORDERID
+      description: Chave estrangeira para sales_orderheader.id_orderheader.
+      tests:  
+        - not_null
+
+    - name: FK_PRODUCT
+      description: Chave estrangeira para a tabela dim_products.
+      tests:
+        - relationships:
+            to: ref('dim_products')
+            field: sk_product
+        - not_null
+
+    - name: PRODUCTID
+
+    - name: PRODUCTNAME
+
+    - name: ORDERQTY
+
+    - name: UNITPRICE
+
+    - name: UNITPRICEDISCOUNT
+
+    - name: FINALPRICE

@@ -38,13 +38,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   fea_adventure_works:
     
-    staging:
+    01.staging:
       +schema: stg
-      stg_product:
+      stg_person:
+      stg_production:
+      stg_sales:
     
-    intermediate:
+    02.intermediate:
       +schema: int
+      int_person:
+      int_production:
+      int_sales:
     
-    marts:
+    03.marts:
       +materialized: table
       +schema: marts

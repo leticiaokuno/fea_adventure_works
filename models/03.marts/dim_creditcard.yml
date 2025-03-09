@@ -1,0 +1,18 @@
+models:
+  - name: dim_creditcard
+    description: Dimensão com informações sobre cartões de crédito.
+    columns:
+      - name: sk_creditcard
+        description: Chave SK gerada para o identificador exclusivo da tabela
+        tests:  
+          - unique
+          - not_null
+
+      - name: ID_CREDITCARD
+        description: PARA PREENCHER
+
+      - name: TYPE_CREDIT_CARD
+        description: PARA PREENCHER
+
+      - name: ID_PERSONCARD
+        description: PARA PREENCHER

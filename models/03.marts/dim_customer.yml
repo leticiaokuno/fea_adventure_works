@@ -1,0 +1,33 @@
+models:
+  - name: dim_customer
+    description: Dimensão com informações sobre clientes.
+    columns:
+      - name: sk_customer
+        description: PARA PREENCHER
+        tests:
+          - unique
+          - not_null
+
+      - name: ID_CUSTOMER
+        description: PARA PREENCHER
+
+      - name: ID_PERSON
+        description: PARA PREENCHER
+
+      - name: STOREID_CUSTOMER
+        description: PARA PREENCHER
+
+      - name: TYPE_PERSON
+        description: PARA PREENCHER
+
+      - name: FIRSTNAME_PERSON
+        description: PARA PREENCHER
+
+      - name: MIDDLENAME_PERSON
+        description: PARA PREENCHER
+
+      - name: LASTNAME_PERSON
+        description: PARA PREENCHER
+
+      - name: FULLNAME_PERSON
+        description: PARA PREENCHER

@@ -1,0 +1,63 @@
+models:
+  - name: fct_salesheader
+    description: "Informações gerais sobre vendas."
+    columns:
+      - name: SALESORDERID
+        description: Chave primária.
+        tests:  
+          - unique
+          - not_null
+
+      - name: FK_REGION
+        description: Chave estrangeira da dim_region.
+        tests:
+          - relationships:
+              to: ref('dim_region')
+              field: sk_region
+      
+      - name: FK_CREDITCARD
+        description: Chave estrangeira da dim_creditcard.
+        tests:
+        - relationships:
+              to: ref('dim_creditcard')
+              field: sk_creditcard
+      
+      - name: FK_CUSTOMER
+        description: Chave estrangeira da dim_customer.
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: sk_customer
+      
+      - name: FK_CALENDAR
+        description: Chave estrangeira da dim_calendar.
+        tests:
+          - relationships:
+              to: ref('dim_calendar')
+              field: sk_calendar
+          - not_null
+      
+      - name: REASON_AGG
+        tests: 
+          - not_null
+      
+      - name: REASON_TYPES_AGG
+      
+      - name: ORDERDATE
+      
+      - name: DUEDATE
+      
+      - name: SHIPDATE
+      
+      - name: ORDERSTATUS
+      
+      - name: SALESCHANNEL
+      
+      - name: SUBTOTAL
+      
+      - name: TAXAMT
+      
+      - name: FREIGHT
+      
+      - name: TOTALDUE
+      

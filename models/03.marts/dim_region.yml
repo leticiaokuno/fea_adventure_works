@@ -1,0 +1,48 @@
+models:
+  - name: dim_region
+    description: "Dimensão com informações sobre região"
+    columns:
+      - name: sk_region
+        description: "Chave SK gerada para o identificador exclusivo da tabela com base nas colunas id_address, line_address e city_address."
+        tests:
+          - unique
+          - not_null 
+
+      - name: ID_ADDRESS
+        description: PARA PREENCHER
+
+      - name:  LINE_ADDRESS
+        description: PARA PREENCHER
+
+      - name:  CITY_ADDRESS
+        description: PARA PREENCHER
+
+      - name:  STATEID_ADDRESS
+        description: PARA PREENCHER
+
+      - name:  CODE_COUNTRY
+        description: PARA PREENCHER
+
+      - name:  NAME_COUNTRY
+        description: PARA PREENCHER
+
+      - name:  NAME_STATE
+        description: PARA PREENCHER
+
+      - name:  CODE_STATE
+        description: PARA PREENCHER
+
+      - name:  ID_TERRITORY
+        description: PARA PREENCHER
+
+      - name:  NAME_TERRITORY
+        description: PARA PREENCHER
+
+      - name:  GROUP_TERRITORY
+        description: PARA PREENCHER
+
+      - name:  SALESYTD_TERRITORY
+        description: PARA PREENCHER
+
+      - name:  SALESLY_TERRITORY
+        description: PARA PREENCHER
