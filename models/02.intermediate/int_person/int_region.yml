@@ -1,0 +1,32 @@
+models:
+  - name: int_region
+    description: Modelo que une informações sobre regiões.
+    columns:
+      - name: ID_ADDRESS
+        tests:
+          - unique
+          - not_null 
+
+      - name:  LINE_ADDRESS
+
+      - name:  CITY_ADDRESS
+
+      - name:  STATEID_ADDRESS
+
+      - name:  CODE_COUNTRY
+
+      - name:  NAME_COUNTRY
+
+      - name:  NAME_STATE
+
+      - name:  CODE_STATE
+
+      - name:  ID_TERRITORY
+
+      - name:  NAME_TERRITORY
+
+      - name:  GROUP_TERRITORY
+
+      - name:  SALESYTD_TERRITORY
+
+      - name:  SALESLY_TERRITORY

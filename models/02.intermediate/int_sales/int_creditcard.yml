@@ -1,0 +1,14 @@
+models:
+  - name: int_creditcard
+    description: Modelo que une informações sobre cartões de crédito.
+    columns:
+      - name: ID_CREDITCARD
+        tests:
+          - unique
+          - not_null
+
+      - name: TYPE_CREDIT_CARD
+        tests:
+          - not_null
+
+      - name: ID_PERSONCARD

@@ -1,6 +1,6 @@
 models:
   - name: int_production_products
-    description: Tabela com informações do produto.
+    description: Modelo que une informações sobre produtos.
     columns:
       - name: pk_id_product
         description: ID único para cada produto.
