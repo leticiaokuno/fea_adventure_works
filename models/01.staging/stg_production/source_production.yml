@@ -14,7 +14,7 @@ sources:
               - not_null
           - name: productsubcategoryid
             description: Identificador da subcategoria a qual o produto pertence.
-          - name: productname
+          - name: name
             description: Nome oficial do produto para identificação no catálogo.
           - name: listprice
             description: Preço de lista do produto, sugerido para venda ao cliente.
@@ -29,7 +29,7 @@ sources:
             tests:
               - unique
               - not_null
-          - name: productcategoryname
+          - name: name
             description: Nome da categoria do produto.
           - name: modifieddate
             description: Data da última modificação na categoria do produto.
@@ -45,7 +45,7 @@ sources:
              - not_null
           - name: productcategoryid
             description: Número de identificação da categoria do produto. Chave estrangeira para ProductCategory.ProductCategoryID.
-          - name: product_subcategory
+          - name: name
             description: Descrição da subcategoria.
           - name: modifieddate
             description: Data da última atualização da subcategoria.
