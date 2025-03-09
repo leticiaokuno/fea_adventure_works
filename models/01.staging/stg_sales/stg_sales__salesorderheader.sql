@@ -15,7 +15,7 @@ with
             , cast (FREIGHT as numeric(18,2)) as freight_orderheader
             , cast (TOTALDUE as numeric(18,2)) as totaldue_orderheader
             , cast (ORDERDATE as date) as orderdate_orderheader
-            , cast (DUEDATE as date) as duedade_orderheader
+            , cast (DUEDATE as date) as duedate_orderheader
             , cast (SHIPDATE as date) as shipdate_orderheader
             , cast (MODIFIEDDATE as date) as modifieddate_orderheader
         from {{ source('source_sales', 'salesorderheader') }}

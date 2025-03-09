@@ -1,0 +1,18 @@
+models:
+  - name: dim_reason
+    description: Dimensão com informações sobre promoções.
+    columns:
+      - name: sk_reason
+        description: Chave SK gerada para identificador exclusivo da tabela.
+        tests: 
+          - unique
+          - not_null
+          
+      - name: ORDERID_HEADERREASON
+        description: PARA PREENCHER
+
+      - name: PROMOTION_NAMES_AGG
+        description: PARA PREENCHER
+
+      - name: PROMOTION_TYPES_AGG
+        description: PARA PREENCHER
